@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    list-style: none;
+    
+   
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+body {
+    overflow-x:hidden;
+}
+header{
+   max-width: 100%;
+   height: 380px;
+    text-align: center;
+}
+.divlogo{
+   
+    height: 81%;
+}
+.imglogo{
+    height:400px;
+    margin-top:-50px;
+}
+.click{
+    display: inline;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    margin-left: 40px;
+    transition: 0.1s;
+}
+.click::after{
+content: " ";
+width: 0%;
+height: 2px;
+background-color: rgba(105, 35, 160, 1);
+position: absolute;
+bottom:0;
+left: 0;
+transition: 0.5s ease-in-out;
+}
+
+.click:hover::after{
+    width: 100%;
+    
+}
+.divdisco{
+    position: relative;
+    max-width: 100%;
+}
+.imgdisco{
+    max-width: 100%;
+    
+}
+.button{
+    font-family: 'Anton', sans-serif;
+    font-size:2.4em;
+    background-color: rgba(140, 41, 186, 1) ;
+    border-radius: 20px;
+   display: inline-block;
+   padding-left:20px ;
+   padding-right:20px;
+   box-shadow: 0px 3px 3px rgb(110, 110, 110);
+}
+
+.textodisco{
+  position: absolute;
+  left: 2%;
+   color:white;
+   font-family: 'Anton', sans-serif;
+   font-size:2.9vw;
+}
+.button{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.button:hover{
+    color: white;
+}
+
+.discobanda{
+    margin-top: 70px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.ajuste{
+    width: 80%;
+}
+.imgdiscos{
+   
+    width: 80%;
+}
+.container{
+  height: auto;
+  max-height: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.button{
+    height: 60px;
+    margin-left:-10px
+}
+.nomesdisc{
+    margin-left: -7px;
+    font-family: 'Anton', sans-serif;
+    font-size:2.3em
+}
+
+.imgcamisas{
+    max-width: 100%;
+    margin-top: 3%;
+}
+
+.containercamisas{
+    margin:0 auto;
+    text-align: center;
+}
+.camisabanda{   
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+   
+}
+.nomescamisas{
+    margin-left: -7px;
+    font-family: 'Anton', sans-serif;
+    font-size:2.3rem;
+    margin-top: -80px;
+}
+.nomestipocamisas{
+    margin-left: -7px;
+    font-family: 'Anton', sans-serif;
+    font-size:2.3em;
+}
+footer{
+    max-width: 100%;
+    height: 500px;
+    background-color: rgba(105, 35, 160, 1);
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+footer .info{
+    width: 320px;
+    min-height: 150px;
+    margin-top: 40px;
+    
+    
+}
+.textinfo{
+    font-size: 2em;
+    font-family:'Anton', sans-serif;
+    color:white;
+    margin-bottom:14px;
+}
+.links{
+    font-family: sans-serif;
+    font-size: 1.3em;
+}
+ul{
+    display: inline;
+}
+.ajusteCamisa{
+    width: 80%;
+}
+@media(max-width:500px)
+{
+ 
+    .nomesdisc {
+        font-size: 1em;
+    }
+    .nomescamisas{
+        font-size: 1em;
+        margin-top: -15px;
+    }
+    .nomestipocamisas{
+        font-size: 1em;
+    }
+    li{
+        font-size: 0.3em;
+    }
+   
+    .button{
+        height: 10%;
+        padding: 3% 7% 2% 7%;
+    }
+    .info{
+        margin-left: 5%;
+    }
+    .textinfo{
+        font-size: 1em;
+        margin-left: 5%;
+    }
+    footer{
+        height: 300px;
+    }
+}
